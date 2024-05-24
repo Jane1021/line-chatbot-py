@@ -1,0 +1,19 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 偵錯工具: 目前檔案",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env":{
+                "LINE_CHANNEL_SECRET": "qV1RgixFh0o0gWyljhqUfRtsiKrw5sDZXezte5VuPi6OPRxKmOSden7U48RyQAwXzlRTYSSLzBtR+likakcPU4T1P3mtBEzL6ArYuVlvybAlHhVazAbbFeQjVebao9lKCaeQXXKpJQmgj5zMb5iZ/QdB04t89/1O/w1cDnyilFU=",
+                "LINE_CHANNEL_ACCESS_TOKEN": "2a607eacc549fa3782f4aa19ae0c7894"
+            }
+        }
+    ]
+}

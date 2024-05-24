@@ -24,8 +24,14 @@ logger = getLogger(__name__)
 #encoding_model_name = const.ENCODING_MODEL_NAME
 
 # get channel_secret and channel_access_token from your environment variable
-channel_secret = "2a607eacc549fa3782f4aa19ae0c7894"
-channel_access_token = "qV1RgixFh0o0gWyljhqUfRtsiKrw5sDZXezte5VuPi6OPRxKmOSden7U48RyQAwXzlRTYSSLzBtR"
+
+from dotenv import load_dotenv
+
+# 加載 .env 文件中的環境變數
+load_dotenv()
+
+channel_secret = os.getenv("LINE_CHANNEL_SECRET", None)
+channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
 
 # multi-lingual support
 support_multilingual = False
