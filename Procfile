@@ -1,1 +1,1 @@
-web: gunicorn llama2_test:app
+web: python app.py
