@@ -10,7 +10,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_community.vectorstores.chroma import Chroma  # 修改成Chroma
 from linebot import LineBotApi, WebhookHandler, WebhookParser
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
-from opencc import OpenCC
+#from opencc import OpenCC
 
 import src.constants as const
 import src.utils as utils
@@ -78,7 +78,7 @@ llm = LlamaCpp(  # 修改成LlamaCpp
 retriever = configure_retriever()
 
 # create converter (simple chinese to traditional chinese)
-s2t_converter = OpenCC("s2t")
+#s2t_converter = OpenCC("s2t")
 
 # create memory
 memory = ConversationBufferMemory(
